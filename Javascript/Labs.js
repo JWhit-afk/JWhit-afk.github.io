@@ -1,4 +1,4 @@
-let textLarge = false;
+var textLarge = false;
 
 function eventHandler() {
     if (textLarge) {
