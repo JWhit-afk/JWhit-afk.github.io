@@ -13,5 +13,28 @@
 		<p id="Lab1", onclick="eventHandler()">Click Me!</p>
 	</div>
 
+	<script> 
+		$(document).ready(function(){ 
+			$("button").click(function(){ 
+				$("#divContent").load("https://api.github.com/repositories/2126244/commits?per_page=1"); 
+			}); 
+		}); 
+	</script> 
+	<style> 
+		body { 
+			text-align: center; 
+		} 
+		#divContent { 
+			font-size: 40px; 
+			font-weight: bold; 
+			color: green; 
+		} 
+	</style> 
+
+
+	<div id="divContent"> 
+		Default Content
+	</div> 
+
 </body>
 </html>
